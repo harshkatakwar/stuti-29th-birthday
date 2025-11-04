@@ -2,9 +2,36 @@ import React, { useEffect, useRef, useState } from "react";
 
 export default function BirthdaySite() {
   const [page, setPage] = useState(0);
-  const messages = Array.from({ length: 29 }, (_, i) =>
-    `Dummy message ${i + 1} — Stuti is wonderful, kind, and full of surprises! 🎉`
-  );
+  const messages = ["You are irresistibly cute in every little way. 💖",
+"You have a heart that is pure and golden.",
+"Your kindness towards me never goes unnoticed. 🌷",
+"You are my yellow, my warm happy color.",
+"You have always been loyal and that means the world to me. 💫",
+"You understand me even when I struggle to explain myself.",
+"You are my peace, my comfort, my home. 🏡",
+"You are sweeter than my favorite ras malai, no competition.",
+"Your voice is my favorite sound, something I crave to hear. 🎶",
+"You live rent free in my thoughts day and night.",
+"I still get butterflies when I see your name pop up. 🦋",
+"You somehow make everything around you better.",
+"You complete the parts of me I did not know were missing. ❤️",
+"Your smile does not just melt hearts, it lights up mine.",
+"You are my favorite notification, the one I always wait for. 💌",
+"You make me feel loved in the simplest, most beautiful ways.",
+"I may be younger, but you will always be my cute little baby. 🧸",
+"Your cheeks are as soft and adorable as little dumplings.",
+"You make my ordinary days feel special. 🌞",
+"With you every silence feels peaceful.",
+"You are my safe place in a world full of noise. 🕊️",
+"Every moment with you feels like a memory worth keeping forever.",
+"You are my serotonin in human form. 🌸",
+"You are that rare kind of peace that feels like home.",
+"You are the reason I believe in magic again. ✨",
+"Your laughter is my favorite sound in the universe.",
+"You are not just someone I talk to, you are someone I feel. 💞",
+"You make time pause in the best way.",
+"You are my reason and my rhythm. 💖"
+];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-pink-50 to-white flex items-center justify-center p-6">
@@ -23,7 +50,7 @@ function CoverPage({ onNext }) {
   return (
     <div className="bg-white/80 backdrop-blur-md rounded-2xl p-12 shadow-lg text-center">
       <h1 className="text-4xl md:text-5xl font-extrabold text-pink-600">Happy 29th Birthday, Stuti! 🥳</h1>
-      <p className="mt-4 text-gray-600">A little surprise full of tiny scratch-cards — click the arrow below to begin.</p>
+      <p className="mt-4 text-gray-600">May god bless you with all the happiness and success you desire — click the button below for surprise.</p>
       <div className="mt-8 flex items-center justify-center gap-4">
         <button
           onClick={onNext}
@@ -52,8 +79,8 @@ function CardsPage({ messages, onBack }) {
       <div className="flex items-center justify-between mb-4">
         <div>
           <button onClick={onBack} className="text-sm text-gray-600 hover:underline">⟵ Back</button>
-          <h2 className="text-2xl font-bold text-pink-600">29 Little Surprises</h2>
-          <p className="text-sm text-gray-500">Scratch a card to reveal a message about Stuti.</p>
+          <h2 className="text-2xl font-bold text-pink-600">29 things about choti bubu</h2>
+          <p className="text-sm text-gray-500">Scratch a card to reveal a message.</p>
         </div>
         <div className="text-right">
           <div className="text-sm text-gray-500">Revealed</div>
@@ -76,7 +103,7 @@ function CardsPage({ messages, onBack }) {
         ))}
       </div>
 
-      <p className="mt-6 text-xs text-gray-400">Tip: on mobile, use your finger to scratch. On desktop, click and drag.</p>
+      <p className="mt-6 text-xs text-gray-400"></p>
     </div>
   );
 }
